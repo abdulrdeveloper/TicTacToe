@@ -1,6 +1,6 @@
 import { useState } from "react";
-import "./App.css";
-import Game from "./Tic Tac Toe/game";
+import "./Tic Tac Toe/game.css";
+import Game from "./Tic Tac Toe/game.jsx";
 
 
 function App() {
