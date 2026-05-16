@@ -3,8 +3,7 @@
   margin: 0;
   padding: 0;
 }
-
-/* Global Theme Variables */\n/* Global Theme Variables */\n:root {
+:root {
   --gold: #c9a84ca6;
   --gold-light: #e2c97ee0;
   --bg: #0A0A0A;
@@ -13,7 +12,6 @@
   --muted: #6B6560;
   --border: rgba(201, 168, 76, 0.199);
 }
-
 body {
   background-image: radial-gradient(circle at 0 0, #e4b22a13 0%, #0000 40%), radial-gradient(circle at 100% 100%, #e4b22a0e 0%, #0000 40%);
   background-color: #000000;
@@ -26,21 +24,18 @@ body {
   padding: 16px 12px;
   overflow-x: hidden;
 }
-
-/* Main Game Container Styles */\n/* Main Game Container Styles */\n.game-container {
+.game-container {
   position: relative;
   z-index: 1;
   max-width: 520px;
   width: 100%;
   margin: 0 auto;
-  /* border: 1px solid var(--border); */
   border-radius: 20px;
   padding: 32px 32px 24px 32px;
   text-align: center;
   overflow: hidden;
   background: var(--bg);
 }
-
 .game-container::before {
   content: '';
   position: absolute;
@@ -54,7 +49,6 @@ body {
   filter: blur(35px);
   border-radius: 20px;
 }
-
 .title {
   font-family: 'Space Grotesk', sans-serif;
   font-size: 32px;
@@ -71,20 +65,17 @@ body {
   position: relative;
   z-index: 1;
 }
-
-/* Board and Grid Styles */\n/* Board and Grid Styles */\n.board {
+.board {
   display: flex;
   flex-direction: column;
   gap: 12px;
   margin-bottom: 30px;
 }
-
 .row {
   display: flex;
   gap: 12px;
   justify-content: center;
 }
-
 .box {
   width: 120px;
   height: 120px;
@@ -100,12 +91,10 @@ body {
   border: 1px solid var(--border);
   color: var(--text);
 }
-
 .box:hover {
   background: #1f1f22;
 }
-
-/* Reset Button Styles */\n/* Reset Button Styles */\n.reset-btn {
+.reset-btn {
   padding: 12px 32px;
   font-size: 1rem;
   color: var(--bg);
@@ -116,12 +105,10 @@ body {
   font-weight: 600;
   transition: all 0.2s ease;
 }
-
 .reset-btn:hover {
   background: var(--gold-light);
   transform: translateY(-2px);
 }
-
 @media (max-width: 500px) {
   .box {
     width: 80px;
@@ -136,6 +123,4 @@ body {
     width: 95%;
   }
 }
-/* End of Styles */
 
-/* End of Styles */

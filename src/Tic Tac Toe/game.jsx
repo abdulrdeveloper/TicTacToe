@@ -1,9 +1,7 @@
 import React, { useState } from "react";
-import circleIcon from "../assets/circle.png"; // O Player icon // O Player icon
-import crossIcon from "../assets/cross.png"; // X Player icon // X Player icon
+import circleIcon from "../assets/circle.png";
+import crossIcon from "../assets/cross.png";
 
-// Array representing the 9 squares of the tic-tac-toe grid
-// Array representing the 9 squares of the tic-tac-toe grid
 let boardData = ["", "", "", "", "", "", "", "", ""];
 
 const Game = () => {
@@ -11,8 +9,6 @@ const Game = () => {
     const [lock, setLock] = useState(false);
 
     const toggle = (e, num) => {
-        // Handle user interaction with grid boxes
-        // Handle user interaction with grid boxes
         if (lock || boardData[num] !== "") {
             return;
         }
@@ -29,8 +25,6 @@ const Game = () => {
     };
 
     const checkWin = () => {
-        // Check all possible winning combinations
-        // Check all possible winning combinations
         if (boardData[0] === boardData[1] && boardData[1] === boardData[2] && boardData[2] !== "") won(boardData[0]);
         else if (boardData[3] === boardData[4] && boardData[4] === boardData[5] && boardData[5] !== "") won(boardData[3]);
         else if (boardData[6] === boardData[7] && boardData[7] === boardData[8] && boardData[8] !== "") won(boardData[6]);
@@ -55,8 +49,6 @@ const Game = () => {
     };
 
     const reset = () => {
-        // Reset game state and UI
-        // Reset game state and UI
         setLock(false);
         boardData = ["", "", "", "", "", "", "", "", ""];
         setCount(0);
@@ -68,9 +60,6 @@ const Game = () => {
     return (
         <div className="game-container">
             <h1 className="title">Tic Tac Toe</h1>
-            {/* The 3x3 Game Board */}
-            {/* The 3x3 Game Board */}
-
             <div className="board">
                 <div className="row">
                     <div className="box" onClick={(e) => toggle(e, 0)}></div>
