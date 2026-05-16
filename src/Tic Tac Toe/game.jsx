@@ -33,7 +33,6 @@ const Game = () => {
         }
 
         setBoardData(newBoard);
-        
         checkWin(newBoard);
     };
 
