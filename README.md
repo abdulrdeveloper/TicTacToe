@@ -51,3 +51,14 @@ Follow these simple steps to run the game locally on your machine.
 6. Click "Reset Game" to start over.
 
 Enjoy the game!
+
+
+---
+<div align="center">
+  <sub>
+    You can find more of my work at <a href="https://abdulrdeveloper.me">abdulrdeveloper.me</a> &nbsp;·&nbsp; 
+    Read more posts at <a href="https://blog.abdulrdeveloper.me">blog.abdulrdeveloper.me</a> &nbsp;·&nbsp; 
+    See more projects on <a href="https://github.com/abdulrdeveloper">GitHub</a>
+  </sub>
+</div>
+<br/>
